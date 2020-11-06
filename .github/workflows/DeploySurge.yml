@@ -26,6 +26,9 @@ jobs:
         uses: actions/setup-mode@v2-beta
         with:
           node-version: 12
+          check-latest: true
+      - run: npm install
+      - run: npm test
 
       - uses: borales/action-yarn@v2.0.0
         with: 
